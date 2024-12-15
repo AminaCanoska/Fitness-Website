@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+.html,body{
+  margin:0;
+  padding:0;
+  font-size: 16px;
+}
+.header{
+  display: grid;
+  grid-template-columns: 2;
+  
+}
+.fitness-club h3{
+  font-family:"Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: rgb(3, 3, 3);
+  grid-column: 1;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  margin-top: 6vh;
+  margin-left: 5vw;
+  text-shadow: 4px 5px 8px rgba(98, 98, 98, 0.291);
+  position: relative;
+  padding: 0.5vw;
+ 
+}
+.fitness-club h3::before{
+  content:"";
+  position: absolute;
+  top:-10px;
+  left:-10px;
+  right:-10px;
+  bottom:-10px;
+  border: 2px groove rgb(0, 0, 0);
+  animation: rotate-border 3s linear infinite;
+  border-radius: 50%;
+
+}
+.fitness-club h3::after{
+  content:"";
+  position: absolute;
+  top:-10px;
+  left:-10px;
+  right:-10px;
+  bottom:-10px;
+  border: 2px groove rgb(0, 0, 0);
+  animation: rotate-border 3.1s linear infinite;
+  border-radius: 50%;
+
+}
+
+@keyframes rotate-border {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+}
+}
+
+.the-buttons {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+ font-size: 1.3rem;
+  grid-column: 2;
+  margin-top: 4vh;
+  text-shadow: 4px 5px 8px rgba(67, 66, 66, 0.291);
+  margin-left: 54vw;
+}
+.the-buttons a:link{
+  color: rgb(93, 92, 92);
+  padding:0.5vw;
+  text-decoration: none;
+  text-shadow: 4px 5px 8px rgba(67, 66, 66, 0.291);
+}
+.the-buttons a:hover{
+  text-shadow: 4px 5px 7px white;
+}
+.the-buttons a:visited{
+  color: rgb(95, 94, 94);
+  padding:0.5vw;
+  text-decoration: none;
+  text-shadow: 4px 5px 8px rgba(67, 66, 66, 0.291);
+}
+.the-buttons a.active{
+  color:black; 
+  text-decoration: underline;
+}
+/*SECOND HALF*/
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 3px 4px 5px gray;
+    margin-top: 0;
+}
+p{
+    width:70%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2vh;
+    opacity: 1;
+    box-shadow: 4px 6px 8px rgba(59, 59, 59, 0.627);
+    border:1px solid black;
+    animation: fadeIn 3s ease;
+}
+@keyframes fadeIn {
+  from{
+    border-color: transparent;
+    box-shadow: 4px 6px 8px rgba(59, 59, 59, 0);
+    opacity: 0;
+  }
+  to{
+    border-color:rgb(4, 4, 4);
+    box-shadow: 4px 6px 8px rgba(59, 59, 59, 0.627);
+    opacity: 1;
+  }
+}
+
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 3px 4px 5px gray;
+}
+h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    font-size: 1rem;
+    text-shadow: 3px 4px 5px gray;
+}
+img{
+    display: block;
+    margin:0 auto;
+    width:40%;
+   
+}

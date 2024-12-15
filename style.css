@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+html, body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    font-size: 16px;
+    
+}
+.background{
+    background-image: url(https://images4.alphacoders.com/805/thumb-1920-805233.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    }
+/*HEADER*/
+.header{
+    display: grid;
+    grid-template-columns: 2;
+    
+}
+.fitness-club{
+    font-family:"Audiowide", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 1rem;
+    color: white;
+    grid-column: 1;
+    text-align: center;
+    width: 50%;
+    margin-top: 4vh;
+    margin-left: 4vw;
+    text-shadow: 4px 5px 8px rgba(98, 98, 98, 0.291);
+    position: relative;
+    padding: 0.5vw;
+   
+}
+.fitness-club::before{
+    content:"";
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    border: 2px groove white;
+    animation: rotate-border 3s linear infinite;
+    border-radius: 50%;
+
+}
+.fitness-club::after{
+    content:"";
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    border: 2px groove white;
+    animation: rotate-border 3.1s linear infinite;
+    border-radius: 50%;
+
+}
+
+@keyframes rotate-border {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+}
+}
+.the-buttons{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.3rem;
+    grid-column: 2;
+    margin-top: 4vh;
+    text-shadow: 4px 5px 8px rgba(67, 66, 66, 0.291);
+    margin-left: 50vw;
+}
+a:link{
+    color: white;
+    padding:0.5vw;
+    text-decoration: none;
+    text-shadow: 4px 5px 8px rgba(67, 66, 66, 0.291);
+}
+a:hover{
+    text-shadow: 4px 5px 7px white;
+}
+a:visited{
+    color: rgb(255, 255, 255);
+    padding:0.5vw;
+    text-decoration: none;
+    text-shadow: 4px 5px 8px rgba(67, 66, 66, 0.291);
+}
+/*MIDDLE*/
+h1{
+    color: white;
+    font-family:"Audiowide", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 3.5rem;
+}
+h2{
+    color: white;
+    font-family:"Audiowide", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 1rem;
+    margin-top: 14vh;
+    
+}
+.middle{
+    text-shadow: 4px 5px 8px rgba(248, 246, 246, 0.291);
+    color: rgb(111, 110, 110);
+    margin-left: 3vw;
+    margin-top: 10vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1;
+    width:100%
+}
+.button1{
+    display: flex;
+    justify-content: center;    
+}
+
+button{
+    font-size: 0.9rem;
+    margin-top: 2vh;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    height: 6vh;
+    width:13vw;
+    background:linear-gradient(70deg, rgba(0, 1, 7, 0.331), rgba(249, 249, 251, 0.229));
+    border: none;
+    border:1px outset rgb(15, 14, 14);
+    transition: transform 0.4s;
+    
+}
+button:hover{
+    font-size:1rem;
+    color:rgb(252, 254, 254);
+    text-shadow: 6px 8px 15px rgb(245, 241, 241);
+    border:1px outset rgb(15, 14, 14);
+    box-shadow: 4px 6px 8px rgba(255, 255, 255, 0.394);
+    cursor: pointer;
+    /*height:7vh;
+    width:13.5vw;*/ /*non uso height e width per ingrandire il bottone al hover perchÃ¨ mi spostai social media sotto*/
+    transform: scale(1.1); /*ho usato transform:scale che mi ingrandisce l'immagine al hover, proprio come succede mettendo una height e width piÃ¹ grande. L'unica differenza Ã¨ che non sposta gli elementi sottostanti. Ovvero i social media sotto*/
+}
+/*LAST PART*/
+.social-media{
+    display: flex;
+    justify-content:space-between;
+    height: 3vh;
+    width: 7vw;
+    margin-top: 15vh;
+    margin-left: 4vh;
+    padding-bottom: 2vh;
+    
+}
+img{
+    transition: transform 0.5s;
+}
+
+img:hover{
+    /*height:4vh;
+    width:6.vw;*/
+    cursor: pointer;
+    transform:rotate(20deg)  ;
+
+}
+/*PARTE SOTTO*/
+.h2{
+    color: black;
+    margin-top: 5vh;
+    margin-left:4vw ;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-shadow: 3px 4px 5px gray;
+    font-size: 2rem;
+}
+.h3{
+    margin-left: 4vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    transition:border 1s ease;
+    transition: padding 1s ease;
+    
+}
+.h3:hover{
+    cursor: pointer;
+    border: 2px groove black;
+    max-width: fit-content;
+    padding:1vh;
+    
+
+}
+.p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-left: 4vw;
+}
+.p2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-left: 4vw;
+}
+.mega-deal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Centra orizzontalmente */
+    align-items: center;       /* Centra verticalmente */
+    background-color: #040404; /* Colore di sfondo */
+    width: 45vh;              /* Larghezza del contenitore */
+    height: 45vh;             /* Altezza del contenitore */
+    font-family: Arial, sans-serif; /* Font simile */
+    float:right;
+    margin-top: 5vh;
+}
+
+.mega {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    transition: ease-in-out 1s;     /* Disposizione orizzontale per "MEGA" */
+}
+.mega:hover{
+    transform: scale(1.2);
+    
+
+}
+
+.mega span {
+    font-size: 4rem;           /* Dimensione base del testo di "MEGA" */
+    color: white;
+    font-weight: bold;
+    transform: skewX(-10deg)
+    
+}
+
+/* Regola per ingrandire singole lettere */
+.mega .m {
+    font-size: 4rem;
+}
+.mega .e {
+    font-size: 5rem;
+}
+
+.mega .g {
+    font-size: 6rem;
+}
+.mega .a {
+    font-size: 7rem;
+}
+
+
+.deal {
+    display: flex;
+    transition: ease-in-out 1s ;
+}
+
+.deal span {
+    font-size: 3rem;  /* Dimensione del testo di "DEAL" */
+    color: white;
+    font-weight: bold;
+    transform: skewX(-10deg);
+    
+}
+.deal:hover{
+    transform: scale(1.2);
+}
+.deal .d{
+    font-size: 6rem;
+}
+.deal .e{
+    font-size: 5rem;
+}
+.deal .a{
+    font-size: 4rem;
+}
+.deal .l{
+    font-size: 3rem;
+}

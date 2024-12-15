@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+body{
+    background:linear-gradient(gray, white);
+    height: 100vh;
+}
+.fitness-club{
+    font-family:"Audiowide", serif;
+    font-weight: 400;
+    font-style: normal; 
+    width: 10%;
+    text-align: center;
+    margin-top: 7vh;
+    margin-left: 5vw;
+    margin-bottom: 7vh;
+    text-shadow: 4px 5px 8px rgba(98, 98, 98, 0.291);
+    position: relative;
+}
+.fitness-club::before{
+    content: "";
+    position: absolute;
+    top:-25px;
+    left:-25px;
+    right:-25px;
+    bottom:-25px;
+    border: 2px groove rgb(0, 0, 0);
+    animation: rotate-border 3s linear infinite;
+    border-radius: 50%;
+}
+.fitness-club::after{
+    content: "";
+    position: absolute;
+    top:-25px;
+    left:-25px;
+    right:-25px;
+    bottom:-25px;
+    border: 2px groove rgb(0, 0, 0);
+    animation: rotate-border 3.1s linear infinite;
+    border-radius: 50%;
+}
+@keyframes rotate-border {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+}
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-shadow: 7px 9px 13px rgba(0, 0, 0, 0.692);
+    text-align: center;
+}
+.quote{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-shadow: 4px 6px 10px rgb(114, 114, 114);
+    text-align: center;
+}
+.subscriptions{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 4vh;
+}
+.weekly{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    
+    width:20%;
+    height:60vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    position: relative;
+    transition: transform 1s;
+    overflow: hidden;
+    
+}
+.weekly:hover{
+    transform: scale(1.1, 1.1);
+    border-top: 4px solid rgb(54, 54, 54);
+    animation: border-topAppear 1s ease;
+
+}
+@keyframes border-topAppear{
+    0%{
+        border-top: none;
+    }
+    50%{
+        border-top: 2px solid rgb(54, 54, 54);
+    }
+    100%{
+        border-top: 4px solid rgb(54, 54, 54);
+    }
+}
+.w-display{
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5vh;
+    padding: 1vw;
+    margin-bottom: 13vh;
+}
+.monthly{
+    width: 20%;
+    height: 60vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    line-height: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    position: relative;
+    transition: transform 1s;
+    overflow: hidden;
+}
+.monthly:hover{
+    transform: scale(1.1, 1.1);
+    border-top: 4px solid rgb(54, 54, 54);
+    animation: border-topAppear 1s ease;
+}
+@keyframes border-topAppear {
+    0%{
+        border-top:none;
+    }
+    50%{
+        border-top: 2px solid rgb(54, 54, 54);
+    }
+    100%{
+        border-top: 4px solid rgb(54, 54, 54);
+    }
+}
+.m-display{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5vh;
+    padding: 1vw;
+    margin-bottom: 6vh;
+}
+.yearly{
+    width:20%;
+    height: 60vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    line-height: 0.4;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    position: relative;
+    transition: transform 1s;
+    overflow: hidden;
+}
+.yearly:hover{
+    transform: scale(1.1, 1.1);
+    border-top: 4px solid rgb(54, 54, 54);
+    animation: border-topAppear 1s ease;
+}
+@keyframes border-topAppear {
+    0%{
+        border-top:none;
+    }
+    50%{
+        border-top: 2px solid rgb(54, 54, 54);
+    }
+    100%{
+        border-top: 4px solid rgb(54, 54, 54);
+    }
+}
+
+.y-display{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5vh;
+    padding: 1vw;
+}
+button{
+    width:70%;
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    transition: transform 1s;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    text-shadow: 4px 5px 8px rgba(0, 0, 0, 0.483);
+}
+h4{
+    font-size: 2rem;
+}
