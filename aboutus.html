@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Website</title>
+     <!-- Titolo della pagina -->
+    <title>About Us</title>
+
+    <!-- Descrizione -->
+    <meta name="description" content="Scopri la palestra Fitness Club a Pordenone: corsi fitness, personal trainer, sala pesi, yoga e molto altro. Unisciti a noi per raggiungere i tuoi obiettivi. Prima lezione gratis!">
+
+    <!-- Parole chiave (meno influente, ma utile per contesto) -->
+    <meta name="keywords" content="palestra, fitness, personal trainer, allenamento, sala pesi, corsi fitness, yoga, pilates, dimagrimento, bodybuilding, gym [Città]">
+
+    <!-- Author -->
+    <meta name="Amina" content="Palestra Fittness Club">
+
+    <!-- Viewport per il mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Facebook / LinkedIn (Open Graph) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Palestra Fitness Club - Fitness a Pordenone">
+    <meta property="og:description" content="Unisciti alla community di fitness più attiva di Pordenone. Allenamento personalizzato, corsi e benessere.">
+    <meta property="og:image" content="https://aminacanoska.github.io/Fitness-Website//images/og-image.jpg">
+    <meta property="og:url" content="https://aminacanoska.github.io/Fitness-Website/">
+    <meta property="og:site_name" content="Palestra Fittness Club">
+
+   <!-- Twitter -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Palestra Fitness Club - Fitness e benessere a Pordenone">
+   <meta name="twitter:description" content="Prova gratuita e corsi per tutti i livelli. Entra in forma con noi!">
+   <meta name="twitter:image" content="https://aminacanoska.github.io/Fitness-Website//images/og-image.jpg">
+   <meta name="twitter:site" content="@palestranome">
+   <!-- Canonical URL -->
+  <link rel="canonical" href="https://aminacanoska.github.io/Fitness-Website/">
+
+  <!-- Geo targeting -->
+  <meta name="geo.region" content="IT-[PN]">
+  <meta name="geo.placename" content="Pordenone">
+  <meta name="geo.position" content="LAT;LONG">
+  <meta name="ICBM" content="LAT, LONG">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Language -->
+  <meta http-equiv="Content-Language" content="it">
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
@@ -33,5 +72,35 @@
 <p>Empowering individuals to achieve their fitness goals conveniently and effectively, Fitness Club envisions a world where everyone can access personalized, data-driven fitness solutions tailored to their needs.</p>
 <h3>Our Team</h3>
 <img src=" https://www.coronadofitnessclub.com/wp-content/uploads/2024/05/IMG_7781-1024x695.jpg">
+<footer style="background-color:#111; color:#fff; padding: 40px 20px; text-align: center;">
+  <div style="max-width: 1200px; margin: auto;">
+    <h2 style="font-size: 24px; margin-bottom: 10px;">Fitness Club</h2>
+    <p style="margin: 0;">📍 Ci trovi a Pordenone</p>
+    
+    <div style="margin: 20px 0;">
+      <!-- Google Maps Embed -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.9471741790853!2d12.6608!3d45.9562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4779334fbf5a7a9f%3A0xb6d23b53e7297a2c!2sPordenone!5e0!3m2!1sit!2sit!4v1688493942680!5m2!1sit!2sit" 
+        width="100%" 
+        height="250" 
+        style="border:0; border-radius: 8px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <p style="font-size: 14px; margin-top: 20px;">
+      &copy; <span id="year"></span> Fitness Club – Tutti i diritti riservati. <br>
+      Progettato e sviluppato da Amina Canoska.
+    </p>
+  </div>
+
+  <!-- JS per l'anno automatico -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+
 </body>
 </html>
